@@ -4,7 +4,6 @@ console.log("Background Script Running");
 chrome.browserAction.onClicked.addListener(buttonClicked);
 
 // Create Button clicked function
-
 function buttonClicked(tab){
     /* 
         Execute when tab Clicked 
@@ -12,4 +11,11 @@ function buttonClicked(tab){
     */
     console.log("Extension clicked");
     console.log(tab);
+
+    // communicate with content.js when button is clicked
+    // msg object
+    let msg = {
+        "txt" : "Hello I am Working"
+    }
+    chrome.tabs.sendMessage(tab.id , msg); // Define tab id which you want to sent and json Object
 }
