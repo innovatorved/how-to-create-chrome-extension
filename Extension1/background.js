@@ -15,7 +15,7 @@ function buttonClicked(tab){
     // communicate with content.js when button is clicked
     // msg object
     let msg = {
-        "txt" : "Hello I am Working"
-    }
+        "txt" : "Hello I am Working yooo"
+    };
     chrome.tabs.sendMessage(tab.id , msg); // Define tab id which you want to sent and json Object
 }
