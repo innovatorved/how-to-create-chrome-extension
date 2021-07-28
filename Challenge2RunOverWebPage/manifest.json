@@ -1,0 +1,13 @@
+{
+    "manifest_version": 2,
+    "name" : "p5 sketch",
+    "version" : "1.0.1",
+    "content_scripts":[
+        {
+            "matches":[
+                "<all_urls>"
+            ],
+            "js": ["p5.js","content.js"]
+        }
+    ] 
+}
