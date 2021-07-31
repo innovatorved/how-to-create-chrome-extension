@@ -1,0 +1,13 @@
+#addpage ,#savepdf{
+	text-align: right;
+	color: #0fabbc;
+	font-size: 20px;
+	cursor: pointer;
+    border:1px solid black;
+    margin : 2% ;
+    padding : 2%;
+}
+body{
+    height:100px;
+    width: 150px;
+}

@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "Contkt",
+    "version": "1.0",
+    "web_accessible_resources" :[
+        
+    ],
+    "content_scripts":[
+        {
+            "matches":[
+                "<all_urls>"
+            ],
+            "js" : ["content.js"]
+        }
+    ],
+
+    "browser_action" : {
+        "default_icon" : "email.png",
+        "default_popup": "PopupPage/index.html",
+        "default_title": "Contkt : new era of Sharing"
+    }
+}
